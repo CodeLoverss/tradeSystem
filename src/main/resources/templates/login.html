@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>用户登录</title>
+
+</head>
+<body style="background-color:#f5f5f5;">
+
+<!--引入头-->
+<div th:replace="head :: html"></div>
+
+<div style="width: 55%; margin: auto; text-align: center; margin-top: 6%">
+    <div class="jumbotron">
+        <h1>Login</h1>
+        <p>欢迎登录TS交易平台</p>
+        <p th:if="${loginError}" style="color:red;font-size:15px;">用户名或密码错误!</p>
+        <form method="post" action="loginAct">
+            <div style="width: 30%; margin: auto;">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"></span>
+                    <input
+                        name="username" type="text" class="form-control"
+                        placeholder="用户名" aria-describedby="basic-addon1">
+                </div>
+                <div style="height: 10px;"></div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"></span>
+                    <input name="password" type="text" class="form-control"
+                           placeholder="密码" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="enabled"><a href="#">忘记密码？</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <p>
+                <input type="submit" class="btn btn-primary btn-lg" value="登录">
+            </p>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
