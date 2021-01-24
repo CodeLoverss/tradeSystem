@@ -1,0 +1,49 @@
+.logo{
+    width: 85px;
+    height: 60px;
+}
+.head{
+    /*border: 1px solid red;*/
+    padding: 15px 15px 5px;
+}
+
+.head_button{
+    padding-top: 5px;
+    text-align: right;
+}
+
+.jumbotron{
+    background-color: #F8F8FF;
+    text-align: center;
+}
+.screen{
+    background-color:#F8F8FF;
+}
+.slide_box{
+    width:fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+.cate_module{
+    text-align: center;
+}
+.item_image{
+    width: 100%;
+    border-radius: 10px;
+}
+.item_image_box{
+    margin-top: 15px;
+}
+/*这两个hover不能用，一用就乱了*/
+.item_image:hover{
+}
+.item_image_box:hover{
+
+}
+.clearfix{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+

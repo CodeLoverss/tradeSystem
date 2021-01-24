@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 @Mapper
-public interface loginMapper {
+public interface LoginMapper {
 
     //根据用户ID修改密码
     @Select("select * from user_info where username=#{username} and password=#{password}")
